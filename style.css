@@ -1,0 +1,104 @@
+body {
+    background: hsl(185, 75%, 39%);
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 55vw bottom, left 45vw top 45vh;
+    font-family: 'Kumbh Sans', sans-serif;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "perfil" "perfil" "perfil"
+        "stats" "stats" "stats";
+
+    grid-template-rows: 300px 70px;
+    grid-template-columns: 350px;
+    margin-top: 100px;
+    margin-left: 576.6px
+}
+
+main {
+    grid-area: "perfil";
+    background: #fff;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+main img:first-child {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    position: absolute;
+}
+
+main img:nth-child(2) {
+    position: absolute;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin-left: 125.4px;
+    margin-top: 90.4px;
+}
+
+main h2 {
+    font-size: 18px;
+    margin-top: 215px;
+    text-align: center;
+    margin-bottom: 0px;
+    color: hsl(229, 23%, 23%);
+
+}
+
+main span {
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+}
+
+main p {
+    font-size: 14px;
+    margin-top: 0px;
+    margin-bottom: 25px;
+    text-align: center;
+    color: hsl(0, 0%, 59%);
+}
+
+main hr {
+    border-color: hsl(0, 0%, 90%);
+}
+
+footer {
+    grid-area: "stats";
+    background: #fff;
+    display: grid;
+    grid-column: repeat(3, 116.66px);
+    grid-template-rows: 70px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+}
+
+footer span {
+    font-size: 18px;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+}
+
+footer p {
+    margin-top: 0px;
+    font-size: 12px;
+    color: hsl(0, 0%, 59%);
+}
+
+.followers {
+    text-align: center;
+}
+
+.likes {
+    text-align: center;
+    grid-column: 2 / 3;
+}
+
+.photos {
+    text-align: center;
+    grid-column: 3 / 4;
+}
