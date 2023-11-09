@@ -10,8 +10,8 @@ body {
 .grid-container {
     display: grid;
     grid-template-areas:
-        "perfil" "perfil" "perfil"
-        "stats" "stats" "stats";
+        "perfil"
+        "stats ";
 
     grid-template-rows: 300px 70px;
     grid-template-columns: 350px;
@@ -20,7 +20,7 @@ body {
 }
 
 main {
-    grid-area: "perfil";
+    grid-area: perfil;
     background: #fff;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -67,7 +67,7 @@ main hr {
 }
 
 footer {
-    grid-area: "stats";
+    grid-area: stats;
     background: #fff;
     display: grid;
     grid-column: repeat(3, 116.66px);
